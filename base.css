@@ -2,22 +2,6 @@
     color: rgba(240, 148, 240, 0.966);
 }
 
-.azul {
-    color: rgba(0, 0, 255, 0.712)
-}
-
-.amarelo {
-    color: yellow
-}
-
-.verde {
-    color: rgb(20, 231, 196)
-}
-
-#rosa {
-    color: pink
-}
-
-#marrom {
-    color: brown
+.card {
+    image-resolution: 10px;
 }
