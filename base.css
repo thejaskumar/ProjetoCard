@@ -13,7 +13,6 @@ input#validationCustom01 {
     border-right-color: white;
 }
 
-input[type=file] {
-    float: left;
-    display: block
+input#imagepessoa {
+    object-position: right
 }
