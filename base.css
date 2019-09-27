@@ -1,18 +1,36 @@
-.verde {
-    color: rgba(240, 148, 240, 0.966);
-}
-
-.card {
-    image-resolution: 10px;
-}
-
-input#validationCustom01 {
-    border-bottom-color: crimson;
-    border-top-color: white;
-    border-left-color: white;
-    border-right-color: white;
-}
-
-input#imagepessoa {
-    object-position: right
-}
+        .verde {
+            color: rgba(240, 148, 240, 0.966);
+        }
+        
+        .card {
+            image-resolution: 10px;
+        }
+        
+        input#validationCustom01 {
+            border-bottom-color: crimson;
+            border-top-color: white;
+            border-left-color: white;
+            border-right-color: white;
+        }
+        
+        input#validationCustom02 {
+            position: relative;
+            border-bottom-color: crimson;
+            border-top-color: white;
+            border-left-color: white;
+            border-right-color: white;
+        }
+        
+        input#validationCustom03 {
+            object-position: left;
+            border-bottom-color: crimson;
+            border-top-color: white;
+            border-left-color: white;
+            border-right-color: white;
+        }
+        
+        h5 {
+            font-family: fantasy;
+            font-style: italic;
+            font: normal;
+        }
