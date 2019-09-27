@@ -5,3 +5,15 @@
 .card {
     image-resolution: 10px;
 }
+
+input#validationCustom01 {
+    border-bottom-color: crimson;
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: white;
+}
+
+input[type=file] {
+    float: left;
+    display: block
+}
