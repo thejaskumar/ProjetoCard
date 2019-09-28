@@ -13,22 +13,6 @@
             border-right-color: white;
         }
         
-        input#validationCustom02 {
-            position: relative;
-            border-bottom-color: crimson;
-            border-top-color: white;
-            border-left-color: white;
-            border-right-color: white;
-        }
-        
-        input#validationCustom03 {
-            object-position: left;
-            border-bottom-color: crimson;
-            border-top-color: white;
-            border-left-color: white;
-            border-right-color: white;
-        }
-        
         h5 {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-style: italic;
