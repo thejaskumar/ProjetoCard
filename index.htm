@@ -6,119 +6,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TarefaCard</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="base.css">
 </head>
 
 
 <body>
-    <div class="rows container-fluid">
-        <nav class="navbar navbar-light bg-light">
-            <span class="navbar-brand mb-0 h1"><img src="img/Onlypay.PNG" alt=""></span>
-            <ul class="nav justify-content-end" <li class="nav-item">
-                <a class="nav-link disabled" href="#">
-                            Informação do Cliente</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">
-                        Informação de Envio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link pay" href="#">
-                        Seleção de pagamento</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <nav class="navbar navbar-light bg-light">
+                    <span class="navbar-brand mb-0 h1"><img src="img/Onlypay.PNG" alt=""></span>
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">
+                                Informação do Cliente</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">
+                                Informação de Envio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pay" href="#">
+                                Seleção de pagamento</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-sm">
+                <img class="image-fluid" src="img/card.PNG" alt="Generic placeholder image">
+            </div>
+            <div class="col-sm">
+                <h5 class="">Opção de Pagamento</h5>
+                <form class="needs-validation" novalidate>
+                    <div class="form-row">
 
-
-    <div class="media container-fluid">
-        <img class="col-md-5 mb-5 image-fluid" src="img/card.PNG" alt="Generic placeholder image">
-        <div class="container=fluid">
-            <h5 class="">Opção de Pagamento</h5>
-            <form class="needs-validation" novalidate>
-                <div class="form-row">
-
-                    <div class="col-md-10 mb-5">
                         <label for="validationCustom01 ">Nome do Cartão</label>
                         <div class="input-group md-10 mb-5">
                             <div class="input-group-prepend">
-                                <span type="image" id="validationCustom01"><img src="img/Pessoa.PNG" alt="Bootstrap" ></span>
+                                <span type="image" id="validationCustom01"><img src="img/Pessoa.PNG"
+                                        alt="Bootstrap"></span>
                             </div>
-                            <input type="text" class="form-control" id="validationCustom01" placeholder="Nome" value="Insira seu Nome" required>
+                            <input type="text" class="form-control" id="validationCustom01" placeholder="Nome"
+                                value="Insira seu Nome" required>
+                        </div>
+                        <div class="valid-feedback">
+                            Tudo certo!
+                        </div>
+
+                        <label for="validationCustom01">Numero do Cartão</label>
+                        <div class="input-group md-10 mb-5">
+                            <div class="input-group-prepend">
+                                <span type="image" id="validationCustom01"><img src="img/Cartão.PNG"
+                                        alt="bootstrap"></span>
+                            </div>
+                            <input type="number" class="form-control" id="validationCustom01"
+                                placeholder="0000 0000 0000 0000" value="" required>
                         </div>
                         <div class="valid-feedback">
                             Tudo certo!
                         </div>
 
 
-                        <div class="col-md15 mb-5">
-                            <label for="validationCustom01">Numero do Cartão</label>
-                            <div class="input-group md-10 mb-5">
-                                <div class="input-group-prepend">
-                                    <span type="image" id="validationCustom01"><img src="img/Cartão.PNG" alt="bootstrap" ></span>
-                                </div>
-                                <input type="number" class="form-control" id="validationCustom01" placeholder="0000 0000 0000 0000" value="" required>
-                            </div>
-                            <div class="valid-feedback">
-                                Tudo certo!
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="col-md-4 mb-3">
-                                <label for="validationCustom03">Mes Expiração</label>
+                        <div class="row mb-3">
+                            <div class="col-sm">
+                                <label for="validationCustom01">Mes Expiração</label>
                                 <div class="input-group md-3 mb-3">
                                     <div class="input-group-prepend">
-                                        <span type="image" class="i class=" fas fa-align-justify><img src="img/Mes.PNG" alt="bootstrap" ></span>
+                                        <span type="image" class="i class=" fas fa-align-justify><img src="img/Mes.PNG"
+                                                alt="bootstrap"></span>
                                     </div>
-                                    <input type="number" class="form-control" id="validationCustom01" placeholder="MM" required>
+                                    <input type="number" class="form-control" id="validationCustom01" placeholder="MM"
+                                        required>
                                     <div class="invalid-feedback">
                                         Por favor, informe um mês valido.
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="form-row">
-                                <div class="col-md-20 mb-3">
-                                    <label for="validationCustom04">Ano Expiração</label>
-                                    <div class="input-group md-3 mb-3 ">
-                                        <div class="input-group-prepend">
-                                            <span type="image" class="i class=" fas fa-align-justify><img src="img/Mes.PNG" alt="bootstrap" ></span>
-                                        </div>
-                                        <input type="number" class="form-control" id="validationCustom01" placeholder="YYYY" required>
-                                        <div class="invalid-feedback">
-                                            Por favor, informe um ano valido.
-                                        </div>
+                            <div class="col-sm">
+                                <label for="validationCustom01">Ano Expiração</label>
+                                <div class="input-group md-3 mb-3 ">
+                                    <div class="input-group-prepend">
+                                        <span type="image" class="i class=" fas fa-align-justify><img src="img/Mes.PNG"
+                                                alt="bootstrap"></span>
                                     </div>
+                                    <input type="number" class="form-control" id="validationCustom01" placeholder="YYYY"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Por favor, informe um ano valido.
+                                    </div>
+                                </div>
+                            </div>
 
 
-                                    <div class="form-row">
-                                        <div class="col-md-25 mb-5 fa-pull-right ">
-                                            <label for="validationCustom01">CVC</label>
-                                            <div class="input-group md-3 mb-5">
-                                                <div class="input-group-prepend">
-                                                    <span type="image" class="i class=" fas fa-align-justify><img src="img/Cadeado.PNG" alt="bootstrap" ></span>
-                                                </div>
-                                                <input type="number" class="form-control" id="validationCustom01" placeholder="CVC" required>
-                                                <div class="invalid-feedback">
-                                                    Por favor, informe um CVC válido.
-                                                </div>
-                                            </div>
+                            <div class="col-sm">
+                                <label for="validationCustom01">CVC</label>
+                                <div class="input-group md-3 mb-3">
+                                    <div class="input-group-prepend">
+                                        <span type="image" class="i class=" fas fa-align-justify><img
+                                                src="img/Cadeado.PNG" alt="bootstrap"></span>
+                                    </div>
+                                    <input type="number" class="form-control" id="validationCustom01" placeholder="CVC"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Por favor, informe um CVC válido.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                                            <button type="submit" class="btn btn-block">Enviar</button>
+                        <div class="container">
+                            <div class="text-center mb-5">
+                                <h3> 
+                                    Valor do Pagamento: <div class="rosa">
+                                        RS 100,00
+                                    </div>
+                                </h3>
+                            </div>
+                                <div class="col-sm text-center">
+                                    <button type="submit" class="btn btn-danger btn-lg">Enviar</button>
+                                </div>
+                            </div>
+                    
 
-            </form>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="rows container-fluid">
+
+    </div>
+
+
+
+    <div>
+
+        <div class="col-md-7 mb-5 container-fluid">
+
             <script>
                 // Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
-                (function() {
+                (function () {
                     'use strict';
-                    window.addEventListener('load', function() {
+                    window.addEventListener('load', function () {
                         // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
                         var forms = document.getElementsByClassName('needs-validation');
                         // Faz um loop neles e evita o envio
-                        var validation = Array.prototype.filter.call(forms, function(form) {
-                            form.addEventListener('submit', function(event) {
+                        var validation = Array.prototype.filter.call(forms, function (form) {
+                            form.addEventListener('submit', function (event) {
                                 if (form.checkValidity() === false) {
                                     event.preventDefault();
                                     event.stopPropagation();
@@ -129,12 +168,18 @@
                     }, false);
                 })();
             </script>
-            </div>
+        </div>
 
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
-            <script src="/path/to/card.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+            crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 "
+            crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM "
+            crossorigin="anonymous "></script>
+
 </body>
 
 </html>

@@ -1,5 +1,7 @@
-        .verde {
-            color: rgba(240, 148, 240, 0.966);
+        .rosa {
+            color: crimson;
+            font-weight: bold;
+            display: inline-block;
         }
         
         .card {
@@ -14,8 +16,12 @@
         }
         
         h5 {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
             font: x-small;
             text-align: initial
+        }
+    
+
+        button {
+            background-color: crimson
         }
